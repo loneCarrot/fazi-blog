@@ -3,16 +3,79 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <title>Fazi blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans:wght@300&family=Kanit:wght@100&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <div class="header">
+    <div class="header-ref">
+      <a href="https://github.com/loneCarrot" target="_blank"><img class="github-reference"src="img/github.svg.png" alt="github"></a> 
+      <a href="#"><img class="linkedIn-reference" src="img/linkedIn.png" alt="linkedIn"></a>
+      <a href="cv-file/Fazekas Balázs_CV_2.pdf" target="_blank"><img class="cv-reference" src="img/cv.png" alt="cv"></a>
+    </div>
+    <div class="header-main">
+      <img class="header-pic" src="img/web-development.png" alt="profile-pic">
+      <h1>Fazi Blog</h1>
+    </div>
+  </div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <div class="posts">
+    <!---<div class="post1">
+      <img class="post-pic" src="img/coffee.png" alt="">
+      <h2>Lorem Ipsum</h2>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
+         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
+         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
+    </div>
+    <div class="post2">
+      <img class="post-pic" src="img/coffee.png" alt="">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
+         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
+         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
+    </div>
+    <div class="post1">
+      <img class="post-pic" src="img/coffee.png" alt="">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
+         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
+         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
+    </div>
+    <div class="post2">
+      <img class="post-pic" src="img/coffee.png" alt="">
+      <h2>Lorem Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
+         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
+         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
+    </div>--->    
+  </div>
 
+  
+  <div class="form">
+    <form action="" method="post">
+      <input type="text" name="title_name" id="title_id">
+      <textarea name="post_name" id="post_id" cols="30" rows="10"></textarea>
+      <button id="button_id">Submit</button>
+    </form>
+  </div>
+  <!--<div class="post-form">
+    
+  </div>-->
+
+  <div class="footer">
+    <a href="https://github.com/loneCarrot" target="_blank">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="cv-file/Fazekas Balázs_CV_2.pdf" target="_blank">CV</a>
+
+    <p>© Balazs Fazekas 2021</p>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/posts.js"></script>
 </body>
 </html>
