@@ -23,49 +23,31 @@
     </div>
   </div>
 
-  <div class="posts">
-    <!---<div class="post1">
-      <img class="post-pic" src="img/coffee.png" alt="">
-      <h2>Lorem Ipsum</h2>
-      
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
-         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
-         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
-    </div>
-    <div class="post2">
-      <img class="post-pic" src="img/coffee.png" alt="">
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
-         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
-         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
-    </div>
-    <div class="post1">
-      <img class="post-pic" src="img/coffee.png" alt="">
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
-         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
-         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
-    </div>
-    <div class="post2">
-      <img class="post-pic" src="img/coffee.png" alt="">
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia lacus vitae auctor sodales. Fusce sed dictum purus, in faucibus odio. Curabitur laoreet lacus lacus, sit amet porttitor ante viverra sed.
-         Sed scelerisque lacus metus, vel lobortis arcu vestibulum nec. In orci eros, mollis volutpat scelerisque at, fringilla ut nibh. Vestibulum a diam metus. Mauris id ornare augue. 
-         Nulla facilisi. Donec at quam eget nisl egestas malesuada. Quisque non urna dapibus, viverra mi id, tincidunt turpis.</p>
-    </div>--->    
+  <div class="navigation">
+    <a href="#" class="create-post">Create post</a>
   </div>
 
-  
-  <div class="form">
-    <form action="" method="post">
-      <input type="text" name="title_name" id="title_id">
-      <textarea name="post_name" id="post_id" cols="30" rows="10"></textarea>
-      <button id="button_id">Submit</button>
-    </form>
+  <div class="forms" >
+    <div class="insert_form">
+      <form action="" method="post">
+        <input type="text" name="title_name" id="title_id" placeholder="Title">
+        <textarea name="post_name" id="post_id" cols="30" rows="10" placeholder="Post"></textarea>
+        <button id="insert_btn">Create Post</button>
+      </form>
+    </div>
+    <div class="update_form">
+      <form action="" method="post">
+         <input type="hidden" name="ed_post" id="ed_post">
+        <input type="text" name="update_title" id="update_title">
+        <textarea name="update_post" id="update_post" cols="30" rows="10"></textarea>
+        <button id="update_btn" >Edit post</button>
+      </form>
+    </div>
   </div>
-  <!--<div class="post-form">
+
+  <div class="posts">
     
-  </div>-->
+  </div>
 
   <div class="footer">
     <a href="https://github.com/loneCarrot" target="_blank">GitHub</a>

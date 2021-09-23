@@ -21,18 +21,13 @@ class Post
 
     public function read($db){
         $query="SELECT 
-                    posts.id as p_id,
-                    posts.title as p_title,
-                    posts.content as p_content,
-                    posts.thumbnail as p_thumbnail,
-                    posts.created_at as p_createdAt,
-                    users.username as u_un 
+                    id as p_id,
+                    title as p_title,
+                    content as p_content,
+                    thumbnail as p_thumbnail,
+                    created_at as p_createdAt
                 FROM 
                     posts 
-                LEFT JOIN
-                    users 
-                ON 
-                    posts.user_id = users.id
                 ORDER BY posts.created_at DESC";
 
         $stmt=$db->prepare($query);
@@ -44,13 +39,12 @@ class Post
     public function create($db){
 
         $date=gmdate("Y-m-d h:i:s");
-        $query='INSERT INTO Posts SET title= :title, content= :content,created_at= :created_at, thumbnail= :thumbnail, User_id= :user_id';
+        $query='INSERT INTO Posts SET title= :title, content= :content,created_at= :created_at, thumbnail= :thumbnail';
         $stmt= $db->prepare($query);
         $stmt->bindParam(':title', $this->title);
         $stmt->bindParam(':content', $this->content);
         $stmt->bindParam(':created_at', $date);
         $stmt->bindParam(':thumbnail', $this->thumbnail);
-        $stmt->bindParam(':user_id', $this->user_id);
 
         if ($stmt->execute()) {
             return true;

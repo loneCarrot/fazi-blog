@@ -32,7 +32,6 @@ if ($_SERVER['REQUEST_METHOD']=="GET") {
           'title'=>$row['p_title'],
           'content'=>$row['p_content'],
           'thumbnail'=>$row['p_thumbnail'],
-          'username'=>$row['u_un'],
           'createAt'=>$row['p_createdAt']
         );
     
@@ -55,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
   $posts->title=strip_tags(html_entity_decode($data->title));
   $posts->content=strip_tags(html_entity_decode($data->content));
   $posts->thumbnail=strip_tags(html_entity_decode($data->thumbnail));
-  $posts->user_id=strip_tags(html_entity_decode($data->user_id));
 
   if ($posts->create($conn)) {
     echo json_encode(array(
